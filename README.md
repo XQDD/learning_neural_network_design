@@ -1,0 +1,1 @@
+> Logs for learning book Neural Network Design (2nd Edition)
