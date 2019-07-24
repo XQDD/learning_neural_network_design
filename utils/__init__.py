@@ -1,16 +1,19 @@
 import numpy as np
 
 
+# Transfer functions:
 def hard_lim(n):
-    n[np.where(n < 0)] = 0
-    n[np.where(n >= 0)] = 1
-    return n
+    a = np.array(n)
+    a[a < 0] = 0
+    a[a >= 0] = 1
+    return a
 
 
 def hard_lim_s(n):
-    n[np.where(n < 0)] = -1
-    n[np.where(n >= 0)] = 1
-    return n
+    a = np.array(n)
+    a[a < 0] = -1
+    a[a >= 0] = 1
+    return a
 
 
 def pure_lin(n):
@@ -18,15 +21,17 @@ def pure_lin(n):
 
 
 def sat_lin(n):
-    n[np.where(n < 0)] = 0
-    n[np.where(n > 1)] = 1
-    return n
+    a = np.array(n)
+    a[a < 0] = 0
+    a[a > 1] = 1
+    return a
 
 
 def sat_lin_s(n):
-    n[np.where(n < -1)] = -1
-    n[np.where(n > 1)] = 1
-    return n
+    a = np.array(n)
+    a[a < -1] = -1
+    a[a > 1] = 1
+    return a
 
 
 def log_sig(n):
@@ -38,5 +43,6 @@ def tan_sig(n):
 
 
 def pos_lin(n):
-    n[np.where(n < 0)] = 0
-    return n
+    a = np.array(n)
+    a[a < 0] = 0
+    return a
