@@ -4,15 +4,15 @@ import numpy as np
 # Transfer functions:
 def hard_lim(n):
     a = np.array(n)
-    a[a < 0] = 0
     a[a >= 0] = 1
+    a[a < 0] = 0
     return a
 
 
 def hard_lim_s(n):
     a = np.array(n)
-    a[a < 0] = -1
     a[a >= 0] = 1
+    a[a < 0] = -1
     return a
 
 
@@ -46,3 +46,4 @@ def pos_lin(n):
     a = np.array(n)
     a[a < 0] = 0
     return a
+

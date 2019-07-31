@@ -39,8 +39,8 @@ print(a2)
 print(hamming2(a2))
 
 # Hopfield Network
-# 一头雾水，可能后面会讲到参数如何得到的吧
+# TODO 一头雾水，可能后面会讲到参数如何得到的吧
 
 
 # Exercises
-# 待补
+# TODO 待补
